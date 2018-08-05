@@ -34,16 +34,27 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 
 	while (CheckHitKeyAll() == 0 && ProcessMessage() == 0 && ScreenFlip() == 0)
 	{
-		DrawBone(-4, 16, 8, 8, GetColor(255, 255, 255));
-		DrawBone(-3, 9, 6, 7, GetColor(200, 255, 255));
-		DrawBone(-4, 3, 8, 8, GetColor(200, 200, 255));
-		//DrawBone(0, 0, 4, 6, GetColor(200, 255, 200));
-		DrawPoint(0, 12, GetColor(255, 0, 0));
-		DrawPoint(0, 5, GetColor(255, 0, 0));
-		//DrawPoint(2, 6, GetColor(255, 0, 0));
+		DrawBone(-5, 8, 2, 8, GetColor(100, 100, 255));
+		DrawBone(3, 8, 2, 8, GetColor(255, 100, 100));
 
-		DrawBone2(-4, 6, 8, 12, GetColor(255, 255, 255));
-		DrawBone2(-4, 16, 8, 8, GetColor(200, 255, 255));
+		DrawBone(-4, 16, 8, 8, GetColor(255, 255, 255));
+		DrawBone(-4, 3, 8, 8, GetColor(200, 200, 255));
+		DrawBone(-3, 9, 6, 7, GetColor(200, 200, 200));
+
+		DrawBone(-3,0, 3, 9, GetColor(200, 255, 255));
+		DrawBone(0, 0, 3, 9, GetColor(200, 255, 200));
+		
+
+
+		DrawPoint(0, 18, GetColor(255, 0, 0));
+		DrawPoint(-1, 9, GetColor(255, 0, 0));
+		DrawPoint(1, 9, GetColor(255, 0, 0));
+
+		DrawPoint(-4, 15, GetColor(255, 0, 0));
+		DrawPoint(4, 15, GetColor(255, 0, 0));
+
+		DrawBone2(-4, 6, 8, 12, GetColor(200, 255, 255));
+		DrawBone2(-4, 16, 8, 8, GetColor(255, 255, 255));
 		DrawBone2(-4, 0, 4, 6, GetColor(200, 200, 255));
 		DrawBone2(0, 0, 4, 6, GetColor(200, 255, 200));
 		DrawPoint2(0, 18, GetColor(255,0,0));
